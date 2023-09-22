@@ -40,8 +40,7 @@ var MarioMaker = (function() {
       backToMenuBtn = view.create('button');
 
       view.addClass(btnWrapper, 'btn-wrapper');
-      //view.addClass(startScreen, 'start-screen');
-      view.addClass(startScreen, 'RHB.png');
+      view.addClass(startScreen, 'start-screen');
       view.addClass(editorButton, 'editor-btn');
       view.addClass(startGameButton, 'start-btn');
       view.addClass(createdLevelsButton, 'created-btn');
@@ -51,8 +50,7 @@ var MarioMaker = (function() {
       view.append(startScreen, startGameButton);
       view.append(startScreen, createdLevelsButton);
       view.append(btnWrapper, backToMenuBtn);
-      //view.append(mainWrapper, startScreen);
-      view.append(mainWrapper, RHB.png);
+      view.append(mainWrapper, startScreen);
       view.append(mainWrapper, btnWrapper);
 
       editorButton.onclick = that.startEditor;
